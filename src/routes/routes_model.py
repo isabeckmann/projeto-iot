@@ -31,22 +31,22 @@ def receive_data(data: SensorInput):
 def get_all():
     return list_sensor_data()
 
-# 1. Dados por ID do sensor
-@router.get("/sensor/data/{sensorId}")
-def get_by_sensor(sensorId: str):
-    return list_by_sensor(sensorId)
-
-# 2. Últimos registros de cada sensor
+# Últimos registros de cada sensor
 @router.get("/sensor/data/latest")
 def get_latest():
     return get_latest_data()
 
-# 3. Remover um registro específico
+# Dados por ID do sensor
+@router.get("/sensor/data/{sensorId}")
+def get_by_sensor(sensorId: str):
+    return list_by_sensor(sensorId)
+
+# Remover um registro específico
 @router.delete("/sensor/data/{record_id}")
 def delete_sensor_record(record_id: int):
     return delete_record(record_id)
 
-# 4. Cadastrar sensores manualmente
+# Cadastrar sensores manualmente
 @router.post("/sensor/register")
 def create_sensor(sensor: SensorRegister):
     return register_sensor(sensor)
