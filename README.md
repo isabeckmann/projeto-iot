@@ -45,7 +45,7 @@ A API foi desenvolvida para:
 - Armazenar as leituras em um banco SQLite
 - Fornecer endpoints para consulta pelas aplicações cliente
 
-A API está hospedada na nuvem e pode ser acessada em:
+A API está hospedada na nuvem e pode ser acessada no link abaixo, se você possuir um token de autenticação.
 
 🔗 <a href="https://projeto-iot-fork-production.up.railway.app/api/sensor/data">https://projeto-iot-fork-production.up.railway.app/api/sensor/data</a>
 
@@ -63,7 +63,10 @@ A aplicação web:
 - Banco de dados SQLite
 
 <b>Front-end (Dashboard)</b> </br>
-- React
+- React 18.2: Biblioteca de UI
+- Vite 5.0: Build tool rápida
+- Axios: Cliente HTTP
+- CSS3: Estilos e animações
   
 <b>Infraestrutura</b> </br>
 - Hospedagem da API em Railway
