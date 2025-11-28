@@ -6,8 +6,9 @@ from src.routes.routes_model import router as sensor_router
 app = FastAPI()
 
 origins = [
-    "http://localhost:8000",
-    "https://devnicolas.com.br/sensor-dash",
+    "http://localhost:8000", # testing
+    "http://localhost:8080", # testing
+    "https://devnicolas.com.br/sensor-dash", #production
 ]
 
 app.add_middleware(
