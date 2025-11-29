@@ -12,6 +12,9 @@ from src.controllers.sensor_controller import (
     register_sensor,
     get_grouped_data
 )
+from dotenv import load_dotenv
+
+load_dotenv()
 
 router = APIRouter()
 security = HTTPBearer()
